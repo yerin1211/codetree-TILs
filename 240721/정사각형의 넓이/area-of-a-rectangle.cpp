@@ -5,6 +5,6 @@ int main() {
     int n;
     cin >> n;
     cout << n * n;
-    if(n * n < 5) cout << "\ntiny";
+    if(n < 5) cout << "\ntiny";
     return 0;
 }

@@ -9,7 +9,7 @@ int main() {
         else if(n >= 80) cout << "B ";
         else if(n >= 70) cout << "C ";
         else if(n >= 60) cout << "D ";
-        else cout << "E ";
+        else cout << "F ";
     }
     return 0;
 }

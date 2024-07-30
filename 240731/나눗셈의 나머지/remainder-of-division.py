@@ -3,7 +3,7 @@ a,b = int(arr[0]), int(arr[1])
 c=[]
 e=0
 
-while a>0:
+while a > 1:
     c.append(a%b)
     a=a//b
 

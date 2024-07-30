@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-    int a, i = 5;
-    while(i--){
+    int a, i = 6;
+    while(--i){
         cin >> a;
         if(a % 3) break;
     }
-    cout << (i == -1);
+    cout << !i;
     return 0;
 }

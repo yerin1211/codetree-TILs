@@ -7,6 +7,6 @@ int main() {
         cin >> a;
         if(a % 3) break;
     }
-    cout << !!i;
+    cout << (i == -1);
     return 0;
 }

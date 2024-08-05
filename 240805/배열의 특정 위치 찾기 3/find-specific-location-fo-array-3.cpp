@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    int a[10], i;
-    for(i = 0; i < 10; i++){
+    int a[100], i;
+    for(i = 0; i < 100; i++){
         cin >> a[i];
         if(!a[i]) break;
     }

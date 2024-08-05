@@ -7,7 +7,7 @@ int main() {
         cin >> a[i];
         if(!(a[i] % 3)){
             cout << a[i-1];
-            i = 10;
+            return 0;
         } 
     }
     return 0;

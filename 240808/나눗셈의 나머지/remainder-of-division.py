@@ -4,8 +4,9 @@ sum = 0
 
 while True : 
     if a<=1 : break 
-    a //= b 
+    
     arr[a%b]+=1
+    a //= b 
 
 for i in arr : 
     sum += i**2

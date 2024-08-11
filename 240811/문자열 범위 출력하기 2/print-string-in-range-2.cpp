@@ -6,6 +6,6 @@ int main() {
     string a;
     int b;
     cin >> a >> b;
-    for(int i = a.length() - 1; i >= 0 || a.length() - i >= b; i--) cout << a[i];
+    for(int i = 1; i <= b && i <= a.length(); i++ ) cout << a[a.length() - i];
     return 0;
 }

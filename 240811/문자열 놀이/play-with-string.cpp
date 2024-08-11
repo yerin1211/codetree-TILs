@@ -15,11 +15,9 @@ int main() {
             s[a-1] = s[b-1];
             s[b-1] = c;
         }
-        else {
-            for(i = 0; s[i] != '\0'; i++){
-                cin >> aa >> bb;
-                if(s[i] == aa) s[i] = bb;
-            }
+        else if(c == 2) {
+            cin >> aa >> bb;
+            for(i = 0; i < s.length(); i++) if(s[i] == aa) s[i] = bb;
         }
         cout << s << '\n';
     }

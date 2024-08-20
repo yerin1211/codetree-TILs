@@ -18,6 +18,8 @@ int main() {
             swap(a[i], a[j]);
         }
         m = max(m, a[i] + a[2*n-1-i]);
+        la = a[i];
+        lb = a[2*n-1-i];
     }
     cout << m;
     return 0;

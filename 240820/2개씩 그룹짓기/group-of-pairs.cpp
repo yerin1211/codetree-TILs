@@ -8,11 +8,10 @@ int main() {
     int a[n*2];
     for(i = 0; i < n*2; i++) cin >> a[i];
     sort(a, a + n*2);
-    
     la = a[0];
     lb = a[n*2-1];
     m = la + lb;
-    for(i = 0; i < n; i++){
+    for(i = 1; i < n; i++){
         if(la == a[i] && lb == a[2*n-1-i]){
             for(j = 1; a[j] == a[i]; j++);
             swap(a[i], a[j]);

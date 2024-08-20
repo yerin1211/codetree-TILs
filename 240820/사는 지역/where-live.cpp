@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
 using namespace std;
 
 class C{
@@ -11,16 +10,14 @@ public:
     }
 };
 
-bool cmp(C c1, C c2){
-    return c1.a > c2.a;
-}
-
 int main() {
-    int n;
+    int n, j = 0;
     cin >> n;
     C c[n];
-    for(int i = 0; i < n; i++) cin >> c[i].a >> c[i].b >> c[i].c;
-    sort(c, c + n, cmp);
-    cout << "name " << c[0].a << "\naddr " << c[0].b << "\ncity " << c[0].c;
+    for(int i = 0; i < n; i++){
+        cin >> c[i].a >> c[i].b >> c[i].c;
+        if(c[i].a > c[j].a) j = i;
+    }
+    cout << "name " << c[j].a << "\naddr " << c[j].b << "\ncity " << c[j].c;
     return 0;
 }

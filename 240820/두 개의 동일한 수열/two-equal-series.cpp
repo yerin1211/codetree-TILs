@@ -10,7 +10,6 @@ int main() {
     for(i = 0; i < n; i++) cin >> b[i];
     sort(a, a + n);
     sort(b, b + n);
-    for(i = 0; i < n; i++) if(a[i] != b[i]) break;
-    cout << (i - n ? "No" : "Yes");
+    cout << (equal(a, a + n, b) ? "Yes" : "No");
     return 0;
 }

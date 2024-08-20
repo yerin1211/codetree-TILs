@@ -3,8 +3,6 @@
 #include <functional>
 using namespace std;
 
-bool cmp(int a, int b){ return a > b; }
-
 int main() {
     int n, a[100], i;
     cin >> n;
@@ -12,7 +10,7 @@ int main() {
     sort(a, a + n);
     for(i = 0; i < n; i++) cout << a[i] << ' ';
     cout << '\n';
-    sort(a, a + n, cmp);
+    sort(a, a + n, greater<int>());
     for(i = 0; i < n; i++) cout << a[i] << ' ';
     return 0;
 }

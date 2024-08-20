@@ -9,7 +9,7 @@ int main() {
     for(int i = 0; i < n; i++){
         cin >> a[i];
         if(!(i % 2)){
-            sort(a, a+i);
+            sort(a, a+i+1);
             cout << a[(i+1)/2] << ' ';
         }
     }

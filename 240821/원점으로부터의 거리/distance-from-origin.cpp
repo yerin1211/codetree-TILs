@@ -11,7 +11,7 @@ public:
 };
 
 bool cmp(const C &a, const C &b){
-    return abs(a.a) + abs(a.b) < abs(b.a) << abs(b.b);
+    return abs(a.a) + abs(a.b) < abs(b.a) + abs(b.b);
 }
 
 int main() {

@@ -6,11 +6,10 @@ for i in range(2):
   num_list = []
   # n x m 크기의 격자
   for i in range(n):
-    x = list(map(int, input().split(' ')))
+    x = list(map(int, input().strip().split(' ')))
     num_list.append(x)
   arr.append(num_list) 
 #arr # 첫 번째 격자 : arr[0], 두 번째 격자 : arr[1]
-
 
 answer = []
 

@@ -18,6 +18,6 @@ int main() {
             y2 = y2 > j ? y2 : j;
         }
     }
-    cout << (x2 - x1 + 1) * (y2 - y1 + 1);
+    cout << (x1 - 3000 ? (x2 - x1 + 1) * (y2 - y1 + 1) : 0);
     return 0;
 }

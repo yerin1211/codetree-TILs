@@ -8,10 +8,10 @@ int main() {
         cin >> a;
         if(a != b) {
             b = a;
-            m = m > c ? m : c;
             c = 0;
         }
         c++;
+        m = m > c ? m : c;
     }
     cout << m;
     return 0;

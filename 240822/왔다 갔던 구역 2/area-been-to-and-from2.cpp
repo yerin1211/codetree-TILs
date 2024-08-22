@@ -2,17 +2,17 @@
 using namespace std;
 
 int main() {
-    int n, i, a, z[2001] = {}, c = 0;
+    int n, i, a, z[2001] = {}, c = 1000;
     char b;
     cin >> n;
     while(n--){
         cin >> a >> b;
         if(b == 'R'){
-            for(i = c + 1; i <= c + a; i++) z[i+1000]++;
+            for(i = c + 1; i <= c + a; i++) z[i]++;
             c+= a;
         }
         else{
-            for(i = c - 1; i >= c - a; i--) z[i+1000]++;
+            for(i = c; i > c - a; i--) z[i]++;
             c-= a;
         }
     }

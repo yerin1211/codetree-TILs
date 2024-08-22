@@ -8,6 +8,6 @@ int main() {
         a[i++] = n % 2;
         n /= 2;
     }while(n);
-    for(--i; i >= 0; i--) cout << a[i];
+    for(i--; i >= 0; i--) cout << a[i];
     return 0;
 }

@@ -8,8 +8,7 @@ int main() {
         cin >> a;
         if(a <= b) c = 0;
         b = a;
-        c++;
-        m = m > c ? m : c;
+        m = m > ++c ? m : c;
     }
     cout << m;
     return 0;

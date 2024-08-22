@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int n, m, i, d, a[1000000] = {}, b;
+    int n, m, i, j, d, a[1000000] = {}, b;
     char t;
     cin >> n >> m;
     b = i = 0;
@@ -12,17 +12,17 @@ int main() {
         else for(d += i; i < d; i++) a[i] = --b;
     }
 
-    b = i = 0;
+    b = j = 0;
     while(m--){
         cin >> t >> d;
         if(t == 'R'){
-            for(d += i; i < d; i++) if(a[i] == ++b) break;
+            for(d += j; j < d; j++) if(a[j] == ++b) break;
         }
         else {
-            for(d += i; i < d; i++) if(a[i] == --b) break;
+            for(d += j; j < d; j++) if(a[j] == --b) break;
         }
-        if(i - d) break;
+        if(j - d) break;
     }
-    cout << i+1;
+    cout << (i - j ? j + 1 : -1);
     return 0;
 }

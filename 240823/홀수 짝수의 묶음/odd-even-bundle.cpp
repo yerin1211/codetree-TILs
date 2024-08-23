@@ -9,7 +9,8 @@ int main() {
         a[i] % 2 ? o++ : e++;
     }
     while(e || o){
-        if(f) o--; 
+        if(f && o) o--; 
+        else if(f && !o) break;
         else if(e) e--;
         else if(o != 4) o -= 2;
         else o -= 4;

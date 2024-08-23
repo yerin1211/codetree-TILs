@@ -2,17 +2,15 @@
 using namespace std;
 
 int main() {
-    int n, m, a[101], i, c = 0, s = 0, b = 0;
+    int n, m, a[101], i, c = 0, s = 0;
     cin >> n >> m;
+    for(i = 0; i < n; i++) cin >> a[i];
     for(i = 0; i < n; i++){
-        cin >> a[i];
-        b += a[i];
-        if(++c > 2*m && a[i]){
-            b = c = 0;
+        if(a[i]){
             s++;
+            i += m*2;
         }
     }
-    if(b) s++;
     cout << s;
     return 0;
 }

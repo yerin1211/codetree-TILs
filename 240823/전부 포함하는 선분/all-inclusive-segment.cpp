@@ -14,9 +14,9 @@ int main() {
     l1 = l2 = 101;
     r1 = r2 = 0;
     for(i = 0; i < n; i++){
-        if(a[i][0] < l2) l2 = a[i][0];
         if(ml != i && a[i][0] < l1) l1 = a[i][0];
-        if(a[i][1] > r1) r1 = a[i][1];
+        if(mr != i && a[i][0] < l2) l2 = a[i][0];
+        if(ml != i && a[i][1] > r1) r1 = a[i][1];
         if(mr != i && a[i][1] > r2) r2 = a[i][1];
     }
     cout << (r1 - l1 < r2 - l2 ? r1 - l1 : r2 - l2);

@@ -30,6 +30,10 @@ int main() {
             }
         }
     }
+    for(;i <= 1000000; i++) {
+        b[i] = c;
+        if(a[i] == b[i] && a[i-1] != b[i-1]) s++;
+    }
     cout << s;
     return 0;
 }

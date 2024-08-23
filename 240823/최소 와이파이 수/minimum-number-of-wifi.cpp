@@ -11,7 +11,7 @@ int main() {
             s++;
         }
     }
-    if(c && !a[n-1]) s++;
+    if(c && a[n-1]) s++;
     cout << s;
     return 0;
 }
